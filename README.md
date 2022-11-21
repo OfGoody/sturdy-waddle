@@ -15,7 +15,7 @@ class BeanName(){
 
 It is possible also to assign a specific name to the bean using the value attribute.
 ```kotlin
-@Named("aVeryInterestingBean")
+@Named("aVerySpecificBean")
 class BeanName(){
 	...
 }
@@ -36,6 +36,22 @@ fun method(bean: BeanName){
 	...
 }
 ```
+
+It is also possible to specifically say the name of the bean to inject:
+
+```kotlin
+@Named("aVerySpecificBean")
+@Inject
+class Client(bean: BeanName){
+	...
+}
+```
+
+```kotlin
+@Inject
+fun method(@Named("aVerySpecificBean") bean: BeanName){
+	...
+}
 
 By default a new instance of the BeanName is created for each invocation on the @Inject annotation on it. 
 The @Scope annotation allow the future re-use of an instance of the bean, while the @Singleton annotation allow the definition of a singleton.
