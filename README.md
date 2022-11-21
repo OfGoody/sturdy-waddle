@@ -52,6 +52,7 @@ class Client(bean: BeanName){
 fun method(@Named("aVerySpecificBean") bean: BeanName){
 	...
 }
+```
 
 By default a new instance of the BeanName is created for each invocation on the @Inject annotation on it. 
 The @Scope annotation allow the future re-use of an instance of the bean, while the @Singleton annotation allow the definition of a singleton.
