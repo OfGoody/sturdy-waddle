@@ -24,17 +24,17 @@ class BeanName(){
 Constructor injection: 
 
 ```kotlin
-	@Inject 
-	class Client(bean: BeanName){
-		...
-	}
+@Inject 
+class Client(bean: BeanName){
+	...
+}
 ```
 Method injection:
 ```kotlin
-	@Inject
-	fun method(bean: BeanName){
-		...
-	}
+@Inject
+fun method(bean: BeanName){
+	...
+}
 ```
 
 By default a new instance of the BeanName is created for each invocation on the @Inject annotation on it. 
