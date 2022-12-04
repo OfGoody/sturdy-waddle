@@ -6,7 +6,7 @@ This repository contains a simple attempt to implement a runtime-time Dependency
 
 ```Java
 @SturdyWaddleBean
-class BeanName(){
+class BeanName{
 	...
 }
 ```
@@ -21,7 +21,7 @@ class BeanName(){
 
 ```Java
 @SturdyWaddleBean(value = "aVerySpecificBean", scope = SINGLETON)
-class BeanName(){
+class BeanName{
 	...
 }
 ```
@@ -30,7 +30,7 @@ Constructor injection:
 
 ```Java
 @SturdyWaddleInject 
-class Client(bean: BeanName){
+publlic Client(bean: BeanName){
 	...
 }
 ```
