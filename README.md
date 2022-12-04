@@ -14,7 +14,7 @@ class BeanName{
 It is possible also to assign a specific name to the bean using the value attribute.
 ```Java
 @SturdyWaddleBean(value = "aVerySpecificBean", scope = PROTOTYPE)
-class BeanName(){
+class BeanName{
 	...
 }
 ```
@@ -30,7 +30,7 @@ Constructor injection:
 
 ```Java
 @SturdyWaddleInject 
-publlic Client(bean: BeanName){
+public Client(bean: BeanName){
 	...
 }
 ```
