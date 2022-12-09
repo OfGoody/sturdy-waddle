@@ -1,4 +1,4 @@
-# Strudy-Waddle
+# Sturdy-Waddle
 This repository contains a simple attempt to implement a runtime-time Dependency Injector framework in Java.
 
 ## Expected Usage
